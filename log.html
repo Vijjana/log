@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>log</title>
+    </head>
+    <body>
+        <hr>
+        <h1 id = "op">output</h1>
+        <hr>
+        <button id = "in">Login</button>
+        <button id = "out">Logout</button>
+    </body>
+</html>
+<script>
+    document.querySelector("#in").addEventListener("click",doIt);
+    document.querySelector("#out").addEventListener("click",swing);
+
+    function doIt(){
+        document.querySelector("#op").innerText = "Login Successfully";
+    }
+    function swing(){
+        document.querySelector("#op").innerText = "Logout Successfully";
+    }
+</script>
